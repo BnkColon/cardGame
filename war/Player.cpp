@@ -4,7 +4,7 @@
 /* 
  * File:   Player.cpp
  * Author: Bianca I. Colon Rosado
- * Student Number: 801-13-1412
+ * Student Number: 
  * 
  * Created on December 1, 2014, 10:24 AM
  * 
