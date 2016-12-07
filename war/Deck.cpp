@@ -14,7 +14,7 @@
 #include <sstream>
 #include <stack>
 #include "Player.h"
-#include <queue>
+#include <deque>
 Deck::Deck() {
     // initially just fill the deck with 0 through 51
     for (int i=0; i<52; ++i) push_back(i);
@@ -90,10 +90,10 @@ void Deck::reparto(Player& p1, Player& p2){
 	for (int i=0; i<52; ++i){
 		int carta = (*this)[i];
 		if(i%2 == 0)
-			p1.push(carta);
+			p1.push_back(carta);
 	
 		else
-			p2.push(carta);
+			p2.push_back(carta);
 
 //	(*this).erase(((*this).begin()), ((*this).begin())+1);
 	
@@ -101,6 +101,10 @@ void Deck::reparto(Player& p1, Player& p2){
 	(*this).clear();
 
 }
+
+
+
+
 
 void Deck::war(int p1, int p2, int p3, int p4, int c1, int c2, int c3, int c4){
 	

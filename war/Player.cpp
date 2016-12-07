@@ -21,6 +21,7 @@
 Player::Player() {
     // initially just fill the deck with 0 through 51
 //    for (int i=0; i<52; ++i) push_back(i);
+ 
 }
 
 /*
@@ -89,5 +90,11 @@ string Player::asCard(int carta) {
     return st;
 }
 
+// int Player::upCard(){
+//          int l = p1.front();
+//          p1.pop();
+
+// return l;
+// }
 
 

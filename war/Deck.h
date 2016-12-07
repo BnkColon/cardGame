@@ -28,6 +28,7 @@ public:
     string asCard(int pos);
     void war(int, int, int, int, int, int, int, int);
     void reparto(Player&, Player&);
+    
 };
 
 

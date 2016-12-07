@@ -22,13 +22,15 @@ using namespace std;
 
 // Player is a child class of vector<int>,
 // will inherit all its cool functions.
-class Player: public queue<int> {
+class Player: public deque<int> {
 public:
     // Constructor
     Player();
 //    void myHand(int);
 
-    string asCard(int carta);
+    string asCard(int pos);
+
+   //int upCard(Player& p1);
 
 };
 
