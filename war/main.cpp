@@ -1,16 +1,16 @@
 /* 
- * File:   Main.cpp
- * Author: R. Arce-Nazario
+ * File:   Player.cpp
+ * Author: Bianca I. Colon Rosado
+ * Student Number:
  * 
- * Created on March 5, 2012, 10:50 PM
- * 
+ * Created on December 1, 2014, 10:24 AM
+ *
  * Client for testing the Deck class.
  */
 
 #include <iostream>
 #include "Deck.h"
 #include "Player.h"
-//#include "Card.h"
 #include <cstdlib>
 #include <stack>
 #include <deque>
@@ -56,41 +56,13 @@ cout<<             "    \\__/  \\__/ /__/     \\__\\ | _| `._____|    \\______| 
         }
 
 	D.reparto(P1, P2);	          // Divide Deck in two bonches of 26 cards 
-	//cout << "size" << P1.size() << endl; // size = 26
-//  	cout << "Player 1: " ;	   // Cards of player 1
-//     while(P1.size() != 0 ){
-// 	cout << P1.asCard(P1.front()) << " " ;
-// 	P1.pop();
-// }  cout << endl ; 
-// 	cout << "Player 2: ";
-//    while(P2.size() != 0 ){          // Cards of player 2
-//         cout << P2.asCard(P2.front()) << " " ;
-//         P2.pop_front();
-// } cout << endl ; 
 
-//     deque<int>::iterator it = P1.begin();
-//   while (it != P1.end()){
-//     cout << ' ' << *it++;
-// }
-
-//     it = P2.begin();
-//   while (it != P2.end()){
-//     cout << ' ' << *it++;
-// }
-
-//while(!P1.empty() && !P2.empty()){
     int pL1;
-//    cout << "Carta Player 1: ";
-//      << P1.upCard();
     int pL2 ;//= P2.upCard();
 
 stack<int> Game; // Create a Stack for the game
-  //cout << "Enr" << endl ; 
 
-
-    //cout << "Carta JugadorF 1: "<< P1.asCard(P1.front()) << endl; // la muestra
-    //cout <<  "Carta JugadorF 2: "<< P2.front() << endl; 
-int compa = 0;
+	int compa = 0;
 while(true){
 
 
@@ -311,33 +283,5 @@ cout<<             "    \\__/  \\__/ /__/     \\__\\ | _| `._____|    \\______| 
     //cout << "size" << P1.size() << endl;
 }
 
-// Cuando hago el output sale como si las bajaras de los players estubieran vacias
-//         cout << "Player 1: " ;     // Cards of player 1
-//     while(P1.size() != 0 ){
-//     cout << P1.asCard(P1.front()) << " " ;
-//     P1.pop();
-// }  cout << endl ; 
-//     cout << "Player 2: ";
-//    while(P2.size() != 0 ){          // Cards of player 2
-//         cout << P2.asCard(P2.front()) << " " ;
-//     P2.pop();
-// } cout << endl ; 
-
-//}
-
-
-
-
-/*	
-    cout << "Player 1:" ;
-	for(int i =0; i<26; ++i){    
-    		P1.myHand(D.asCard(i));
-		D.pop(i);	
-	}
-    cout << "Now deck" ;
-	for (int i=0; i<D.size(); ++i)
-        cout << D.asCard(i) << " ";
-    cout << endl;
-*/
     return 0;
 }
